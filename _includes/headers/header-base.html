@@ -1,10 +1,10 @@
-<header class="grid grid-cols-3 items-center border-b border-black relative">
+<header class="grid grid-cols-3 items-center relative">
 
   <!-- first nav column -->
-  <div class="text-center lg:block hidden">
+  <div class="text-left lg:block hidden">
     <nav class="nav-items">
 
-      {% for item in site.data.navigation.header limit:2 %}
+      {% for item in site.data.navigation.header limit:3 %}
   
       <a href="{{item.nav_link}}">{{item.nav_title}}</a>
 
@@ -19,9 +19,36 @@
     <a href="/"><img src="{{site.data.site-settings.brand.primary_logo_path}}" alt="" class="object-center object-contain lg:mx-auto h-12"></a>
 </div>
 
+<div></div>
+
+</header>
+
+
+<!-- Original -->
+<!-- <header class="grid grid-cols-3 items-center border-b border-black relative"> -->
+
+  <!-- first nav column -->
+  <!-- <div class="text-center lg:block hidden">
+    <nav class="nav-items">
+
+      {% for item in site.data.navigation.header limit:2 %}
+  
+      <a href="{{item.nav_link}}">{{item.nav_title}}</a>
+
+      {% endfor %}
+
+    </nav>
+  </div> -->
+
+
+<!-- middle logo column -->
+<!-- <div class="lg:col-span-1 col-span-2 p-2">
+    <a href="/"><img src="{{site.data.site-settings.brand.primary_logo_path}}" alt="" class="object-center object-contain lg:mx-auto h-12"></a>
+</div> -->
+
 
 <!-- third column -->
-  <div class="text-center lg:block hidden">
+  <!-- <div class="text-center lg:block hidden">
     <nav class="nav-items">
 
       {% for item in site.data.navigation.header limit:2 offset:2 %}
@@ -31,6 +58,6 @@
       {% endfor %}
 
     </nav>
-  </div>
+  </div> -->
 
-</header>
+<!-- </header> -->
