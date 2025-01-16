@@ -12,7 +12,17 @@ footer:
     nav_link: /
   - nav_title: About
     nav_link: /about    
+  - nav_title: About
+    nav_link: /about    
   - nav_title: Services
     nav_link: /services
   - nav_title: Contact
     nav_link: /contact
+  - nav_title: Menu Item
+    nav_link: /menu item
+  - nav_title: Menu Item
+    nav_link: /menu item
+  - nav_title: Menu Item
+    nav_link: /menu item
+  - nav_title: Menu Item
+    nav_link: /menu item

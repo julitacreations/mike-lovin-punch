@@ -1,5 +1,5 @@
    <!-- Footer -->
-   <footer class="grid lg:grid-cols-2 grid-cols-1 bg-dark py-6">
+   <footer class="grid lg:grid-cols-3 grid-cols-1 bg-dark py-6">
 
     <div class="flex flex-col md:pl-12">
         <a href="/" class="md:m-0 mx-auto">
@@ -28,6 +28,14 @@
           </nav>
     </div>
 
+    <div class="grid-cols-1 py-6 pr-12">
+      <h4 class="mb-4"> Join the newsletter </h4>
+      <form> 
+        <input type="email" name="_replyto" id="_replyto" placeholder="Email" class="border-b mb-4 w-full"/>
+        <button type="submit" class="w-full py-2 border border-black py-1.5 px-2 mt-2 text-sm">Submit</button>
+      </form>
+    </div>
+
       <!-- mobile nav -->
       <div class="grid lg:hidden">
         <div class="text-center md:hidden grid min-h-[5vh]">
@@ -51,4 +59,6 @@
         {% include default/social-icons.html %}
 
       </div> -->
+
+
   </footer>
