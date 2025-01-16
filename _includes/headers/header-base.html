@@ -1,10 +1,15 @@
 <header class="grid grid-cols-3 items-center relative">
 
-  <!-- first nav column -->
+  <!--  logo column -->
+  <div class="lg:col-span-1 col-span-2 p-2">
+    <a href="/"><img src="{{site.data.site-settings.brand.primary_logo_path}}" alt="" class="object-center object-contain mx-6 my-2 h-12"></a>
+  </div>
+
+  <!--  nav column -->
   <div class="text-left lg:block hidden">
     <nav class="nav-items">
 
-      {% for item in site.data.navigation.header limit:3 %}
+      {% for item in site.data.navigation.header limit:5 %}
   
       <a href="{{item.nav_link}}">{{item.nav_title}}</a>
 
@@ -13,13 +18,12 @@
     </nav>
   </div>
 
+  <div class="col-span-1 inline-block border border-black bg-gray-100 py-1.5 px-4">
+    <nav>
+      <a href="#" class="uppercase">Bookings</a>
+    </nav>
+  </div>
 
-<!-- middle logo column -->
-<div class="lg:col-span-1 col-span-2 p-2">
-    <a href="/"><img src="{{site.data.site-settings.brand.primary_logo_path}}" alt="" class="object-center object-contain lg:mx-auto h-12"></a>
-</div>
-
-<div></div>
 
 </header>
 
