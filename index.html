@@ -3,31 +3,31 @@ layout: default
 title: Page Title
 category:
  - title: Aesthetics
-   icon: /images/brand_logo.png
+   icon: /images/the-clinic-group-icon.png
    description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
  - title: Dental
-   icon: /images/burger-icon.png
+   icon: /images/the-clinic-group-icon.png
    description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
  - title: Hair
-   icon: /images/brand_logo.png
+   icon: /images/the-clinic-group-icon.png
    description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
  - title: Skin
-   icon: /images/burger-icon.png
+   icon: /images/the-clinic-group-icon.png
    description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
  - title: Wellbeing
-   icon: /images/brand_logo.png
+   icon: /images/the-clinic-group-icon.png
    description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
 feature:
- - feature-icon: /images/brand_logo.png
+ - feature-icon: /images/the-clinic-group-icon.png
    feature-title: Anti Wrinkle Injections
    link:
- - feature-icon: /images/burger-icon.png
+ - feature-icon: /images/the-clinic-group-icon.png
    feature-title: Hydrafacial
    link:
- - feature-icon: /images/brand_logo.png
+ - feature-icon: /images/the-clinic-group-icon.png
    feature-title: Anti Wrinkle Injections
    link:
- - feature-icon: /images/burger-icon.png
+ - feature-icon: /images/the-clinic-group-icon.png
    feature-title: Hydrafacial
    link:
 testimonial:
@@ -42,7 +42,8 @@ seo:
  twitter_description:
  type: website
  hide-from-google: false
-banner_image: /images/photo-1.jpg
+banner_image: /images/the-clinic-group-london-facial.jpg
+banner_image-1: /images/photo-1.jpg
 ---
 
 <!--  Banner section -->
@@ -54,7 +55,7 @@ banner_image: /images/photo-1.jpg
 <section class="grid lg:gap-10 gap-8 md:grid-cols-2 grid-cols-1 lg:p-20 md:px-10 px-5 py-12">
 
   <div>
-      <img src="/images/photo-2.jpg" alt="" class="xl:h-[95vh] h-70 w-full object-cover object-center editable">
+      <img src="/images/the-clinic-group-london-aesthetic-practitioner-facial-treatments-12-harley-street-london.jpg" alt="" class="xl:h-[95vh] h-70 w-full object-cover object-center editable">
   </div>
 
   <div class="editable lg:w-[75%] md:w-full mt-auto">
@@ -71,7 +72,7 @@ banner_image: /images/photo-1.jpg
 <section class="p-10 grid grid-cols-5 gap-2">
 
   {% for item in page.category %}
-  <a class="bg-neutral-100 border border-neutral-300 h-[40vh] p-5 flex flex-col justify-between">
+  <a class="bg-neutral-100 border border-neutral-300 h-[45vh] p-5 flex flex-col justify-between">
     <div class="flex justify-between">
       <h3 class="uppercase text-xl flex justify-center items-center">{{item.title}} </h3> 
       <img src="{{item.icon}}" alt="" class="h-12 w-12 object-cover object-center editable">
@@ -134,5 +135,5 @@ banner_image: /images/photo-1.jpg
 </section>
 
 <!--  Banner image -->
-<section class="bg-cover bg-center min-h-60" style="background-image: url('{{page.banner_image}}');">
+<section class="bg-cover bg-center min-h-60" style="background-image: url('{{page.banner_image-1}}');">
 </section>
