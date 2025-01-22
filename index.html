@@ -52,13 +52,13 @@ banner_image-1: /images/photo-1.jpg
 
 
 <!-- Example image and text section-->
-<section class="grid lg:gap-10 gap-8 md:grid-cols-2 grid-cols-1 lg:p-20 md:px-10 px-5 py-12">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 lg:p-20 md:px-10 px-5 py-12">
 
-  <div>
+  <div class="lg:order-1 order-2">
       <img src="/images/the-clinic-group-london-aesthetic-practitioner-facial-treatments-12-harley-street-london.jpg" alt="" class="xl:h-[95vh] h-70 w-full object-cover object-center editable">
   </div>
 
-  <div class="editable lg:w-[75%] md:w-full mt-auto">
+  <div class="editable lg:w-[75%] md:w-full mt-auto lg:order-2 order-1">
       <h2 class="title-lg mb-8 w-[50%]">Boosting health <em>enchancing</em> beauty. Inspiring <em>confidence.</em></h2>
       <p>“Welcome to The Clinic Group, a luxury aesthetic clinic in the heart of London where medical excellence and wellness unite to deliver a truly bespoke service.”</p>
       <p class="uppercase mt-4">San Peyman, Founder of the Clinic Group</p>
@@ -69,7 +69,7 @@ banner_image-1: /images/photo-1.jpg
 
 <!-- Categories introduction -->
 
-<section class="pb-20 px-10 grid grid-cols-5 gap-2">
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pb-10 lg:pb-20 px-5 md:px-10 gap-2">
 
   {% for item in page.category %}
   <a class="bg-neutral-100 border border-neutral-300 h-[45vh] p-5 flex flex-col justify-between">
@@ -85,17 +85,17 @@ banner_image-1: /images/photo-1.jpg
 
 <!-- Treatment Feature Section -->
 
-<section class="grid grid-cols-12 min-h-[65vh]">
-  <div class="col-span-3 px-10 py-20 bg-stone-300">
+<section class="grid lg:grid-cols-12 min-h-[65vh]">
+  <div class="col-span-12 lg:col-span-3 px-10 py-20 bg-stone-300">
     <h2 class="uppercase text-3xl">Discover our most popular treatments</h2>
     <a class="inline-block border border-black bg-gray-100 py-1.5 px-4 mt-8">Bookings</a>
   </div>
 
-  <div class="col-span-3 bg-cover bg-center" style="background-image: url('{{page.banner_image}}');">
+  <div class="col-span-12 lg:col-span-3 bg-cover bg-center min-h-[50vh]" style="background-image: url('{{page.banner_image}}');">
   </div>
 
 
-  <div class="col-span-6 px-10 py-20 bg-stone-300 space-y-8">
+  <div class="col-span-12 lg:col-span-6 px-10 py-20 bg-stone-300 space-y-8">
 
     {% for item in page.feature %}
     <div class="pb-6 last:pb-0">
@@ -123,7 +123,7 @@ banner_image-1: /images/photo-1.jpg
 
   <h2 class="uppercase text-3xl font-light mb-8">What our clients say</h2>
 
-  <div class="grid grid-cols-2 gap-2 font-light">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 font-light">
     {% for item in page.testimonial %}
     <div class="border border-neutral-300 p-10">
       <p>{{item.comment}}</p>
