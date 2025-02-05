@@ -27,7 +27,7 @@ brand:
   light_color: '#FEF5F0'
   dark_color: '#000000'
   bright_color: '#7ADBD4'
-  primary_logo_path: /images/brand_logo.png
+  primary_logo_path: /images/mlp-primary-logo.svg
   secondary_logo_path:
   submark_logo_path:
 technical:
