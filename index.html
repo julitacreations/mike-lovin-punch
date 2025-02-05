@@ -1,40 +1,6 @@
 ---
-layout: default
+layout: basic
 title: Page Title
-category:
- - title: Aesthetics
-   icon: /images/the-clinic-group-icon.png
-   description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
- - title: Dental
-   icon: /images/the-clinic-group-icon.png
-   description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
- - title: Hair
-   icon: /images/the-clinic-group-icon.png
-   description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
- - title: Skin
-   icon: /images/the-clinic-group-icon.png
-   description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
- - title: Wellbeing
-   icon: /images/the-clinic-group-icon.png
-   description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-feature:
- - feature-icon: /images/the-clinic-group-icon.png
-   feature-title: Anti Wrinkle Injections
-   link:
- - feature-icon: /images/the-clinic-group-icon.png
-   feature-title: Hydrafacial
-   link:
- - feature-icon: /images/the-clinic-group-icon.png
-   feature-title: Anti Wrinkle Injections
-   link:
- - feature-icon: /images/the-clinic-group-icon.png
-   feature-title: Hydrafacial
-   link:
-testimonial:
- - comment: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab ill    nventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sedut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-   author: Name
- - comment: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab ill    nventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sedut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-   author: Name
 seo:
  meta-description: 
  keywords:
@@ -42,100 +8,25 @@ seo:
  twitter_description:
  type: website
  hide-from-google: false
-banner_image: /images/the-clinic-group-london-facial.jpg
-banner_image-1: /images/photo-1.jpg
+banner_image: /images/photo-1.jpg
 ---
 
-<!--  Banner section -->
+<!-- Example banner section -->
 <section class="bg-cover bg-center svh" style="background-image: url('{{page.banner_image}}');">
 </section>
 
 
-<!-- Example image and text section-->
-<section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 lg:p-20 md:px-10 px-5 py-12">
 
-  <div class="lg:order-1 order-2">
-      <img src="/images/the-clinic-group-london-aesthetic-practitioner-facial-treatments-12-harley-street-london.jpg" alt="" class="xl:h-[95vh] h-70 w-full object-cover object-center editable">
+<!-- Example image and text section-->
+<section class="grid lg:gap-10 gap-8 md:grid-cols-2 grid-cols-1 lg:p-20 md:px-10 px-5 py-12">
+
+  <div>
+      <img src="/images/photo-2.jpg" alt="" class="xl:h-[95vh] h-70 w-full object-cover object-center editable">
   </div>
 
-  <div class="editable lg:w-[75%] md:w-full mt-auto lg:order-2 order-1">
-      <h2 class="title-lg mb-8 md:w-[50%] w-3/4">Boosting health <em>enchancing</em> beauty. Inspiring <em>confidence.</em></h2>
-      <p>“Welcome to The Clinic Group, a luxury aesthetic clinic in the heart of London where medical excellence and wellness unite to deliver a truly bespoke service.”</p>
-      <p class="uppercase mt-4">San Peyman, Founder of the Clinic Group</p>
+  <div class="editable lg:w-[75%] md:w-full">
+      <h2 class="title-lg mb-8">Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime eaque sed accusamus beatae quisquam sint provident commodi aliquam natus cupiditate impedit officia fugiat. Itaque, iste! Similique doloribus placeat cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime eaque sed accusamus beatae quisquam sint provident commodi aliquam natus cupiditate impedit officia fugiat. Itaque, iste! Similique doloribus placeat cumque?</p>
       <a href="#" class="button mt-8">Learn more</a>
   </div>
-</section>
-
-
-<!-- Categories introduction -->
-
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pb-10 lg:pb-20 px-5 md:px-10 gap-2">
-
-  {% for item in page.category %}
-  <a class="bg-neutral-100 border border-neutral-300 h-[45vh] p-5 flex flex-col justify-between">
-    <div class="flex justify-between">
-      <h3 class="uppercase text-xl flex justify-center items-center">{{item.title}} </h3> 
-      <img src="{{item.icon}}" alt="" class="h-12 w-12 object-cover object-center editable">
-    </div>
-    <p class="text-sm font-light">{{item.description}}</p>
-  </a>
-  {% endfor %}
-
-</section>
-
-<!-- Treatment Feature Section -->
-
-<section class="grid xl:grid-cols-12 min-h-[65vh]">
-  <div class="col-span-12 xl:col-span-3 md:px-10 px-5 py-20 bg-stone-300">
-    <h2 class="uppercase text-3xl">Discover our most popular treatments</h2>
-    <a class="inline-block border border-black bg-gray-100 py-1.5 px-4 mt-8">Bookings</a>
-  </div>
-
-  <div class="col-span-12 xl:col-span-3 bg-cover bg-center min-h-[50vh]" style="background-image: url('{{page.banner_image}}');">
-  </div>
-
-
-  <div class="col-span-12 xl:col-span-6 md:px-10 px-5 md:py-20 py-12 bg-stone-300 space-y-8">
-
-    {% for item in page.feature %}
-    <div class="pb-6 last:pb-0">
-      <div class="flex items-start space-x-6">
-        <img src="{{item.feature-icon}}" alt="" class="h-10 w-10 object-cover object-center editable">
-        <div>
-          <div class="flex items-center justify-between">
-            <h5 class="uppercase text-xl font-extralight w-[68%]">{{item.feature-title}}</h5>
-            <div>
-              <a href="{{item.link}}" class="uppercase border-b border-gray-500 text-sm text-right">Read more</a>
-            </div>
-          </div>
-          <p class="text-sm mt-4"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-          </p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-</section>
-
-
-<!-- Testimonial section -->
-
-<section class="md:px-10 px-5 py-20">
-
-  <h2 class="uppercase text-3xl font-light mb-8">What our clients say</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 font-light">
-    {% for item in page.testimonial %}
-    <div class="border border-neutral-300 p-10">
-      <p>{{item.comment}}</p>
-      <p class="mt-4">{{item.author}}</p>
-    </div>
-    {% endfor %}
-  </div>
-
-</section>
-
-<!--  Banner image -->
-<section class="bg-cover bg-center min-h-60" style="background-image: url('{{page.banner_image-1}}');">
 </section>
