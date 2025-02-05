@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     fontFamily: {
       serif: ['Font Name', 'serif'],
-      sans: ['Font Name', 'sans-serif'],
-      body:  ['Font Name', 'sans-serif'],
+      sans: ['neue-haas-grotesk-display', 'sans-serif'],
+      body:  ['Darker Grotesque', 'sans-serif'],
     },
     safelist: [
       {
