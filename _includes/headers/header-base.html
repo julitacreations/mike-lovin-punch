@@ -24,8 +24,11 @@
   
     <!-- Sign up CTA Button -->
     <div class="flex justify-center items-center mt-8 border-t border-bright py-8 w-full">
-      <a href="#" class="w-full bg-bright uppercase font-sans rounded-full lg:px-36 md:px-28 px-16 py-4 text-center">Sign Up</a> 
+      <a href="#" class="w-full block bg-bright hover:bg-primary uppercase font-sans rounded-full lg:px-36 md:px-28 px-16 py-4 text-center">
+        Sign Up
+      </a> 
     </div>
+    
         
     <!-- Social and e-mail -->
     <div class="flex justify-between my-4">
@@ -73,6 +76,7 @@
 
 .burger-button span {
   width: 40px;
+  height: 1.8px;  /* Increase thickness */
   border: 0.005rem solid var(--secondary);
   background-color: var(--secondary);
   display: block;
@@ -87,7 +91,6 @@
 
 /* Burger menu, background colour and slide in location */
 .burger-menu {
-  /* Change background colour, leave the rest */
   background-color: var(--light);
   position: fixed;
   height: 100vh;
@@ -112,8 +115,6 @@
 .burger-menu a,
 .burger-menu span {
   color: var(--dark);
-  /* font-family: serif; */
-  /* text-transform: uppercase; */
   text-decoration: none;
   white-space: nowrap;
   opacity: 0;
