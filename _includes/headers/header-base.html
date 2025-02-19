@@ -1,12 +1,50 @@
-<header class="grid grid-cols-6 items-center gap-6 sticky left-0 right-0 top-0 bg-white z-40">
+<header class="absolute right-0 top-0 left-0">
+  <!-- Mobile/Desktop Menu Button -->
+  <nav class="relative">
+
+    <!-- Menu Button Container with Fixed Positioning -->
+    <div class="burger-button">
+      <img src="/images/burger-icon.png" 
+           id="hamburger-button" 
+           class="h-12 w-12 object-cover">
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="burger-menu">
+      <div id="mobile-menu" class="hidden absolute right-0 mt-0 bg-light p-4 text-black w-1/2 h-screen z-20">
+        <a href="#" class="block py-2">Home</a>
+        <a href="#" class="block py-2">About</a>
+        <a href="#" class="block py-2">Contact</a>
+      </div>
+    </div>
+    
+  </nav>
+</header>
+
+
+<style>
+  .burger-button {
+position:fixed;
+top: 0.5%;
+right: 1%;
+z-index: 1000;
+padding: 8px;
+}
+</style>
+
+
+
+
+
+<!-- <header class="grid grid-cols-6 items-center gap-6 sticky left-0 right-0 top-0 bg-white z-40"> -->
 
   <!--  logo column -->
-  <div class="lg:col-span-3 col-span-3 p-2">
+  <!-- <div class="lg:col-span-3 col-span-3 p-2">
     <a href="/"><img src="{{site.data.site-settings.brand.primary_logo_path}}" alt="" class="object-center object-contain mx-6 my-2 h-12"></a>
-  </div>
+  </div> -->
 
   <!--  nav column -->
-  <div class="lg:col-span-3 col-span-3 text-left lg:block hidden">
+  <!-- <div class="lg:col-span-3 col-span-3 text-left lg:block hidden">
     <nav class="nav-items flex justify-end items-center ">
 
       {% for item in site.data.navigation.header limit:5 %}
@@ -22,7 +60,7 @@
   </div>
 
 
-</header>
+</header> --> 
 
 
 <!-- Original -->

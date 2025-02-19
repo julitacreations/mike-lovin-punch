@@ -56,10 +56,24 @@
 
   <!--------------------- Body ----------------------->
 
+  {% include headers/header-base.html %}
+
     {{content}}
 
     
     {% include footers/logo-left.html %}
+
+  </body>
+
+
+  <!--------------------- Site Wide Javascript ----------------------->
+
+  <!--jQuery -->
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <!-- Custom javascript style -->
+  <script src="/javascript/scripts.js" defer></script>
 
 
 </html>
