@@ -1,11 +1,6 @@
 // ------------ PRESS SLIDER
 $(document).ready(function () {
 
-    //Hamburger button
-    $('#hamburger-button').click(function () {
-      $('#mobile-menu').slideToggle(); 
-    });
-
     //Press slider 
     $('.pressSlider').slick({
       // auto play: true or false
