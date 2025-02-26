@@ -59,12 +59,12 @@ banner_image: /images/background-pattern-home.png
 
 <section class="relative bg-cover bg-center xl:h-[75vh] h-80 border-b border-secondary" style="background-image: url('/images/background-pattern-home-yellow.png');">
   
-  <div class="flex items-center justify-center h-full px-4">
+  <div class="flex items-center justify-center mx-auto h-full px-4">
     <!-- Text container with max-width -->
     <div class="text-center xl:w-[35%] lg:w-[50vw] w-[75vw] editable">
       <h3 class="font-sans text-4xl/[1] text-[1.6rem] mb-12 editable">Your favourite vibrant, tropical punches are almost here!</h3>
       <p class="text-xl/[1] pb-14 editable">Sign up now and be the first to sip and savour Mike Lovin’ Punch when we go live.”</p>
-      <a href="#" class="bg-bright uppercase font-sans rounded-full lg:px-36 md:px-28 px-16 py-4">Sign up here</a>
+      {% include mailchimp-sign-up.html %}
     </div>
   </div>
 </section>
